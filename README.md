@@ -1,7 +1,7 @@
 # duckit
 Search duck duck go 🦆 easily 
 
-## Install
+## Install on Linux
 ```
 go install -v github.com/SaDs3c/duckit
 ```
