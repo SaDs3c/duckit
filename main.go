@@ -13,8 +13,9 @@ func main() {
 		os.Exit(1)
 	}
 
-	query := strings.Join(os.Args[2:], "+")
-	searchURL := fmt.Sprintf("https://duckduckgo.com/?q=w3m+%s&ia=answer", query)
+	query := strings.Join(os.Args[1:], "+")
+	//searchURL := fmt.Sprintf("https://duckduckgo.com/?q=w3m+%s&ia=answer", query)
+  searchURL := fmt.Sprintf("https://duckduckgo.com/?q=%s&ia=answer", query)
 
 	cmd := exec.Command("w3m", searchURL)
 	cmd.Stdout = os.Stdout
